@@ -31,6 +31,7 @@
                     colors: {
                         clifford: '#da373d',
                         'bike-primary': '#E76F51',
+                        'bike-bg': 'rgba(231, 111, 81, 0.1)',
                     }
                 }
             }
@@ -42,9 +43,9 @@
 <body class="font-poppins">
 
     <!-- header section -->
-    <header class="md:container mx-auto lg:py-5">
+    <header class="md:container mx-auto">
         <!-- nav-bar -->
-        <nav>
+        <nav class="my-5 lg:my-12">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
                     <div class="dropdown">
@@ -63,7 +64,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="font-bold text-2xl">Bike Dekho</a>
+                    <a class="font-bold text-2xl lg:text-4xl">Bike Dekho</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -79,12 +80,11 @@
             </div>
         </nav>
         <!-- slider/carousel -->
-        <section class="px-10">
+        <section class="px-10 bg-bike-bg">
             <div class="carousel w-full">
                 <!-- slide1 -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div
-                        class="grid md:grid-cols-2 items-center md:max-w-screen-sm lg:max-w-screen-md mx-auto lg:gap-10">
+                    <div class="grid md:grid-cols-2 items-center mx-auto lg:gap-10 py-10 md:p-10 lg:p-24">
                         <!-- content -->
                         <div class="space-y-6 md:left-5 relative">
                             <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
@@ -108,8 +108,7 @@
                 </div>
                 <!-- slide2 -->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div
-                        class="grid md:grid-cols-2 items-center md:max-w-screen-sm lg:max-w-screen-md mx-auto lg:gap-10">
+                    <div class="grid md:grid-cols-2 items-center mx-auto lg:gap-10 md:p-10 lg:p-24">
                         <!-- content -->
                         <div class="space-y-6 md:left-5 relative">
                             <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
@@ -133,8 +132,7 @@
                 </div>
                 <!-- slide3 -->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div
-                        class="grid md:grid-cols-2 items-center md:max-w-screen-sm lg:max-w-screen-md mx-auto lg:gap-10">
+                    <div class="grid md:grid-cols-2 items-center mx-auto lg:gap-10 md:p-10 lg:p-24">
                         <!-- content -->
                         <div class="space-y-6 md:left-5 relative">
                             <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
@@ -158,8 +156,7 @@
                 </div>
                 <!-- slide4 -->
                 <div id="slide4" class="carousel-item relative w-full">
-                    <div
-                        class="grid md:grid-cols-2 items-center md:max-w-screen-sm lg:max-w-screen-md mx-auto lg:gap-10">
+                    <div class="grid md:grid-cols-2 items-center mx-auto lg:gap-10 md:p-10 lg:p-24">
                         <!-- content -->
                         <div class="space-y-6 md:left-5 relative">
                             <h2 class="text-3xl md:text-4xl lg:text-6xl font-bold">
@@ -187,7 +184,84 @@
     </header>
 
     <!-- main section -->
-    <main class="md:container mx-auto"></main>
+    <main class="md:container mx-auto">
+        <!-- Fetured Bikes In This Year -->
+        <section class="my-10 md:my-20 lg:my-40">
+            <div class="">
+                <div class="text-center m-24">
+                    <h2 class="font-semibold text-2xl md:text-4xl lg:text-5xl">
+                        Fetured Bikes In This Year
+                    </h2>
+                    <p class="font-semibold text-sm text-bike-primary">
+                        Best bike collection
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center md:justify-between
+                gap-16 items-center">
+                    <div class="mx-auto">
+                        <img class="w-[270px]" src="images/others/feature-bike.png" alt="">
+                    </div>
+                    <div class="mx-auto">
+                        <img class="w-[270px]" src="images/others/feature-bike.png" alt="">
+                    </div>
+                    <div class="mx-auto">
+                        <img class="w-[270px]" src="images/others/feature-bike.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- latest news  -->
+        <section class="my-10 md:my-20 lg:my-40">
+            <div class="m-20">
+                <h2 class="font-semibold text-2xl md:text-4xl lg:text-5xl text-center">latest News</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 justify-center md:justify-between
+            gap-16 items-center">
+                <!-- card1 -->
+                <div class="card bg-base-100 max-w-96 shadow-xl p-5">
+                    <figure>
+                        <img src="images/others/latest1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p class="sm:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-bike-primary text-white border-none">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="card bg-base-100 max-w-96 shadow-xl p-5">
+                    <figure>
+                        <img src="images/others/latest2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p class="sm:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-bike-primary text-white border-none">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class="card bg-base-100 max-w-96 shadow-xl p-5">
+                    <figure>
+                        <img src="images/others/latest3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p class="sm:text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary bg-bike-primary text-white border-none">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- footer section -->
     <footer></footer>
